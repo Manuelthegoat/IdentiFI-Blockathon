@@ -3,6 +3,8 @@ import { useRef, useState, useEffect } from "react";
 import axios from "axios";
 import { useMediaQuery } from "react-responsive";
 import { useToast } from "@/components/ui/use-toast";
+import Image from "next/image";
+
 import {
   PiArrowRight,
   PiBookOpenTextLight,
@@ -183,10 +185,12 @@ const UserProfile = (params: any) => {
           <div className="border-2 rounded-xl  shadow-lg mb-4 py-3 overflow-hidden w-full bg-gradient-to-tl from-slate-50 to-slate-100">
             <div className="flex flex-col items-center justify-center pt-4 mx-3">
               <div className="text-center flex flex-col items-center justify-center">
-                <img
+                <Image
                   className="w-28 h-28 shadow-md object-cover object-center p-1 rounded-full ring-2 ring-gray-300 dark:ring-gray-500"
                   src={formData.imageUrl || "/images/avatar.jpeg"}
                   alt="Bordered avatar"
+                  width={112}
+  height={112}
                 />
                 <p className="font-bold text-lg text-gray-700 py-2">
                   @{`${formData.username}` || `UserNotFound`}

@@ -19,6 +19,12 @@ const nextConfig = {
       },
       {
         protocol: "https",
+        hostname: "gateway.pinata.cloud",
+        port: "",
+        pathname: "/**",
+      },
+      {
+        protocol: "https",
         hostname: "cdn.sanity.io",
         port: "",
         pathname: "/**",

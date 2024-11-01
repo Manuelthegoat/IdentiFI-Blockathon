@@ -3,12 +3,12 @@ const fs = require("fs");
 const privateKey = fs.readFileSync("secrete.txt").toString();
 /** @type import('hardhat/config').HardhatUserConfig */
 module.exports = {
-  defaultNetwork: "sepolia",
+  defaultNetwork: "Lisk",
   networks: {
     hardhat: {
       chainId: 4202,
     },
-    sepolia: {
+    Lisk: {
       url: "https://rpc.sepolia-api.lisk.com",
       accounts: [privateKey],
       gasPrice: 1000000000,
@@ -40,4 +40,6 @@ module.exports = {
   loggingEnabled: true,
 };
 
-// npx hardhat ignition deploy ./ignition/modules/Lock.js --network BitTorrent
+// npx hardhat ignition deploy ./ignition/modules/Lock.js --network Lisk
+
+//0xE86372cA334121b356F243537b4FAF1Cd52db67D
