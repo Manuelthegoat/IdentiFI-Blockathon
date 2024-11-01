@@ -5,11 +5,6 @@
 1. 🤖 [Introduction](#introduction)
 2. ⚙️ [Tech Stack](#tech-stack)
 3. 🔋 [Features](#features)
-4. 🤸 [Quick Start](#quick-start)
-5. 🕸️ [Smart Contract Overview](#smart-contract-overview)
-6. 🖼️ [Storing Images on IPFS](#storing-images-on-ipfs)
-7. 🚀 [More](#more)
-
 
 
 ## <a name="introduction">🤖 Introduction</a>
